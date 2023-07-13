@@ -20,7 +20,7 @@ public class SecurityConfig {
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
             .oauth2Login(withDefaults()).formLogin(withDefaults());
-         //   .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
+
 
 
     return    http.build();
